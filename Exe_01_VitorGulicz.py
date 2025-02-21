@@ -7,3 +7,4 @@ if pais in paises:
     print("A posição deste pais na lista é {} - Vitor Gulicz".format(i))
 else:
     print("pais invalido - Vitor Gulicz")
+print("Fim do programa")

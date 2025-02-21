@@ -13,3 +13,4 @@ if numero<10:
     print("Produto do numero escolhido: {} - Vitor Gulicz".format(produtos[numero]))
 else:
     print("Numero invalido")
+print("Fim do programa")

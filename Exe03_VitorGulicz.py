@@ -6,22 +6,21 @@ nomes=[]
 numero=0
 for numero in range(3):
     nomes.append(input("Digite o nome do convidado para a festa: "))
-op=input("Deseja adicionar outro?(sim ou não)")
-while op!="não":
+op=input("Deseja adicionar outro?(s ou n)")
+while op!="n":
     nomes.append(input("Digite o nome do convidado para a festa: "))
-    op=input("Deseja adicionar outro?(sim ou não)")
+    op=input("Deseja adicionar outro?(s ou n)")
 i=len(nomes)
 print("Pessoas convidadas para a festa: {}. \nNumero de pessoas convidadas: {}".format(nomes,i))
 nomeop=input("Digite o nome da lista que deseja remover: ")
 if nomeop in nomes:
     a=nomes.index(nomeop)
     print("Posição do nome na lista: {}".format(a))
-    opRemover=input("Deseja remover o {} da lista(sim ou não)".format(nomeop))
-    if "sim" in opRemover.lower():
+    opRemover=input("Deseja remover o {} da lista(s ou n)".format(nomeop))
+    if "s" in opRemover.lower():
         nomes.remove(nomeop)
-    if "não" in opRemover.lower():
+    if "n" in opRemover.lower():
         print("Nome não removido")
-    else:
-        print("Opção invalida")
-    print(nomes)
+    print("Lista das pessoas convidadas: ",nomes)
 print("Vitor Gulicz")
+print("Fim do programa")
